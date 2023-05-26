@@ -15,11 +15,6 @@ html, body {
     font-family: "Lato";
 }
 
-
-@media (max-width: 599px) {
-    .wrapper { grid-template-columns: 5% auto 5%; }
-}
-
 header {
     background-color: #004aad;
     color: white;
@@ -29,10 +24,6 @@ header {
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
-}
-
-header .personal_info {
-    <!-- width: 40vw; -->
 }
 
 header .profile_picture {
@@ -110,4 +101,22 @@ ul ul {
 
 .github_icon {
     width: 16px;
+}
+
+@media (max-width: 599px) {
+    .wrapper { grid-template-columns: 5% auto 5%; }
+
+    ul {
+        padding-left: 0.5rem;
+    }
+
+    ul ul {
+        padding-left: 0.5rem;
+    }
+}
+
+@media (max-width: 399px) {
+    header {
+        flex-direction: column-reverse;
+    }
 }
