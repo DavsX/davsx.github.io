@@ -2,15 +2,183 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="author" content="Dávid Kovács" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>KovDavid.eu</title>
-
     <script data-goatcounter="https://kovdavid.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <title>KovDavid.eu</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
   </head>
 
   <body>
-    Coming soon ™
+    <div class="wrapper">
+        <div class="side_pane_top"></div>
+        <header>
+            <div class="personal_info">
+                <div class="name">Dávid Kovács</div>
+                <div class="icon_info">
+                    <img src="assets/images/location_icon.png" alt="Location" />
+                    <span>Bratislava, Slovakia</span>
+                </div>
+                <div class="icon_info">
+                    <img src="assets/images/email_icon.png" alt="Personal e-mail" />
+                    <span>
+                        <a href="mailto:kovdavid@gmail.com" target="_blank">
+                            kovdavid@gmail.com
+                        </a>
+                    </span>
+                </div>
+                <div class="icon_info">
+                    <img src="assets/images/firefox_icon.png" alt="Personal webpage" />
+                    <span>
+                        <a href="https://kovdavid.eu" target="_blank">
+                            https://kovdavid.eu
+                        </a>
+                    </span>
+                </div>
+                <div class="icon_info">
+                    <img src="assets/images/linkedin_icon.png" alt="LinkedIn" />
+                    <span>
+                        <a href="https://linkedin.com/in/kovdavid" target="_blank">
+                            https://linkedin.com/in/kovdavid
+                        </a>
+                    </span>
+                </div>
+                <div class="icon_info">
+                    <img src="assets/images/github_icon.png" alt="GitHub" />
+                    <span>
+                        <a href="https://github.com/kovdavid" target="_blank">
+                            https://github.com/kovdavid
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="profile_picture">
+                <img src="assets/images/profile_picture.png" alt="Profile picture" />
+            </div>
+        </header>
+        <div class="side_pane_top"></div>
+        <div class="side_pane_bottom"></div>
+        <main>
+            <section class="content">
+                <h1>Work Experience - Backend Developer</h1>
+                <span class="employer">
+                    <b>Vacuumlabs s.r.o.</b> (Oct 2021 - Mar 2023)
+                </span>
+                <ul>
+                    <li>Greenfield bank in the Philippines (Sep 2022 – Dec 2022)</li>
+                    <ul>
+                        <li>Worked on microservices responsible for generating bank statements using <b>Kotlin</b>, Kafka, PostgreSQL</li>
+                        <li>Implemented paginated PDF generation using aggregated data from other microservices</li>
+                    </ul>
+                    <li>Twisto (Nov 2021 – Aug 2022) – Buy-Now-Pay-Later fintech company</li>
+                    <ul>
+                        <li>Developed backend services using <b>Python</b>, Django, PostgreSQL</li>
+                        <li>Worked on the integration of 3rd party eshops and merchants</li>
+                        <li>Worked on the definition and implementation of the GraphQL schema used for onboarding customers</li>
+                        <li>Worked on PDF generation for customer contracts with templating</li>
+                    </ul>
+                    <li>Internal projects</li>
+                    <ul>
+                        <li>Worked on an internal application for aggregating billing, staff, worklog, and vacation data from multiple sources using <b>TypeScript</b>, Node.js, PostgreSQL</li>
+                        <li>Worked on a greenfield bank backend using ThoughtMachine, <b>Kotlin</b>, Kafka, PostgreSQL</li>
+
+                    </ul>
+                </ul>
+                <span class="employer">
+                    <b>NIKÉ, spol. s r.o.</b> (Feb 2015 - Sep 2021)
+                </span>
+                <ul>
+                    <li>Senior <b>Perl</b> developer, architect and team leader (Scrum)</li>
+                    <li>As the <b>lead architect</b> I was responsible for the unification of the intra-company flow of sport betting data (definition of technologies, schema, documentation, communication with other teams).</li>
+                    <li>As a <b>team leader</b> I was responsible for figuring out main implementation milestones.</li>
+                    <li>As a <b>senior developer</b> I was responsible for implementing critical parts of the system. I’ve:</li>
+                    <ul>
+                        <li>introduced unit testing, Docker containerization, automated Gitlab CI tests/builds</li>
+                        <li>unified application deployment using <b>Salt Stack</b> and <b>Pillar</b></li>
+                        <li>developed backend services using Perl, MySQL, RabbitMQ, Kafka, Nginx, Docker</li>
+                        <li>implemented <b>Apache Avro</b> binary encoding in <b>C</b> (Perl::XS)</li>
+                        <li>implemented RabbitMQ to Kafka messaging shovel in Golang</li>
+                        <li>worked on <b>DevOps</b> (Linux, Bash, monitoring, logging, alerting, production support)</li>
+                    </ul>
+                </ul>
+                <span class="employer">
+                    <b>ISPER s.r.o.</b> (2013 - 2014)
+                </span>
+                <ul>
+                    <li>Junior <b>Perl</b> developer</li>
+                </ul>
+
+                <h1>Education</h1>
+                <span class="employer">
+                    <b>Slovak University of Technology in Bratislava</b> (2010 - 2015)
+                </span>
+                <ul>
+                    <li>Master of Engineering (Ing.)</li>
+                    <li>Faculty of Electrical Engineering and Information Technology</li>
+                    <li>Field of study: Telecommunications</li>
+                </ul>
+                <span class="employer">
+                    <b>Secondary school of Electrical Engineering in Bratislava</b> (2006 - 2010)
+                </span>
+                <ul>
+                    <li>Field of study: Telecommunications</li>
+                </ul>
+
+                <h1>Skills and side projects</h1>
+                <ul>
+                    <li>Spoken languages: Hungarian, Slovak, English (+ un poco de Español)</li>
+                </ul>
+                <ul class="side_projects">
+                    <li>
+                        AVR keyboard firmware written in (C++)
+                        <ul>
+                            <li>
+                                <img src="assets/images/github_icon_black.png" alt="Github" class="github_icon" />
+                                <a href="https://github.com/kovdavid/dalsik" target="_blank">https://github.com/kovdavid/dalsik</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        i3wm workspace renamer written in (Rust)
+                        <ul>
+                            <li>
+                                <img src="assets/images/github_icon_black.png" alt="Github" class="github_icon" />
+                                <a href="https://github.com/kovdavid/i3daemon" target="_blank">https://github.com/kovdavid/i3daemon</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Android app for learning Spanish (Java)
+                        <ul>
+                            <li>
+                                <img src="assets/images/github_icon_black.png" alt="Github" class="github_icon" />
+                                <a href="https://github.com/kovdavid/daspalen" target="_blank">https://github.com/kovdavid/daspalen</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Video screencast downloader (Elixir)
+                        <ul>
+                            <li>
+                                <img src="assets/images/github_icon_black.png" alt="Github" class="github_icon" />
+                                <a href="https://github.com/kovdavid/SipsDownloader" target="_blank">https://github.com/kovdavid/SipsDownloader</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Utility for easy directory navigation (Bash)
+                        <ul>
+                            <li>
+                                <img src="assets/images/github_icon_black.png" alt="Github" class="github_icon" />
+                                <a href="https://github.com/kovdavid/jump" target="_blank">https://github.com/kovdavid/jump</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <div class="side_pane_bottom"></div>
+    </div>
   </body>
 </html>
