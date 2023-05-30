@@ -120,3 +120,51 @@ ul ul {
         flex-direction: column-reverse;
     }
 }
+
+@media screen {
+    .github_screen { display: block; }
+    .github_print { display: none; }
+}
+
+@media print {
+    @page {
+        margin: 5mm 0mm;
+        size: auto;
+        size: portrait;
+        width: 210mm 297mm;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .wrapper {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        padding: 0 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .github_screen { display: none; }
+    .github_print { display: block; }
+
+    header, header .personal_info .icon_info span a {
+        color: black;
+    }
+
+    section {
+        page-break-inside: avoid;
+        font-size: 14px;
+    }
+
+    .side_pane_top { display: none; }
+    .side_pane_bottom { display: none; }
+}
