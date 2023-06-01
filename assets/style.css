@@ -60,6 +60,10 @@ header .name {
     margin-bottom: 1rem;
 }
 
+span.blockspam {
+  display: none;
+}
+
 .side_pane_top {
     background-color: #004aad;
 }
