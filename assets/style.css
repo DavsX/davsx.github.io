@@ -83,7 +83,7 @@ span.blockspam {
     color: #004aad;
 }
 
-span.employer {
+span.employer-name {
     font-size: 1.2rem;
 }
 
@@ -132,10 +132,14 @@ ul ul {
 
 @media print {
     @page {
-        margin: 5mm 0mm;
+        margin: 15mm 0mm;
         size: auto;
         size: portrait;
         width: 210mm 297mm;
+    }
+
+    @page :first {
+        margin: 10mm 0mm;
     }
 
     body {
@@ -149,7 +153,7 @@ ul ul {
     }
 
     header {
-        padding: 0 0;
+        padding: 0;
     }
 
     a {
@@ -159,16 +163,26 @@ ul ul {
 
     .github_screen { display: none; }
     .github_print { display: block; }
+    .side_pane_top { display: none; }
+    .side_pane_bottom { display: none; }
 
     header, header .personal_info .icon_info span a {
         color: black;
     }
 
     section {
-        page-break-inside: avoid;
         font-size: 14px;
     }
 
-    .side_pane_top { display: none; }
-    .side_pane_bottom { display: none; }
+    .employer {
+        page-break-inside: avoid;
+    }
+
+    .section_education {
+        page-break-before: always;
+    }
+
+    .content {
+        padding: 0rem;
+    }
 }
